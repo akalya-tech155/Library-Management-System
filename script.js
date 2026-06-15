@@ -7,9 +7,11 @@ function addBook() {
 
 
 
+
 //ADDED NEW FEATURES IN JAVASCRIPT
 
 let books = [];
+
 
 function addBook() {
 
@@ -19,8 +21,8 @@ function addBook() {
     books.push(bookName);
 
     displayBooks();
- 
 }
+
 
 function displayBooks() {
 
@@ -34,11 +36,10 @@ function displayBooks() {
 
 
 
-
     
 //UPDATE SCRIPT.JS
 
-
+    
 function updateBookCount() {
 
     document.getElementById("bookCount")
@@ -46,14 +47,38 @@ function updateBookCount() {
         `Total Books: ${books.length}`;
 }
 
- function addBook() {
+function addBook() {
 
     const bookName =
         document.getElementById("bookName").value;
 
-    books.push(bookName);
+        books.push(bookName);
 
     displayBooks();
 
+
     updateBookCount();
  }}
+
+
+
+//Update addBook():
+//Prevent empty book names.
+
+
+function addBook() {
+
+    const bookName =
+        document.getElementById("bookName").value;
+
+    if (bookName.trim() === "") {
+
+        alert("Book name cannot be empty");
+
+        return;
+    }
+
+    books.push(bookName);
+
+    displayBooks();
+}
