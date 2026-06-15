@@ -10,10 +10,20 @@ body {
     margin: 10px;
 }
 
+
 /*UPDATE STYLE.CSS*/
 
 #bookCount {
     color: darkblue;
 }
 
+
+/*UPDATED CSS FILE*/
+
+.borrow-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
 
