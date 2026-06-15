@@ -6,6 +6,7 @@ function addBook() {
 
 
 
+
 //ADDED NEW FEATURES IN JAVASCRIPT
 
 let books = [];
@@ -18,6 +19,7 @@ function addBook() {
     books.push(bookName);
 
     displayBooks();
+ 
 }
 
 function displayBooks() {
@@ -29,4 +31,29 @@ function displayBooks() {
     });
 
     document.getElementById("bookList").innerHTML = output;
+
+
+
+
+    
+//UPDATE SCRIPT.JS
+
+
+function updateBookCount() {
+
+    document.getElementById("bookCount")
+        .innerText =
+        `Total Books: ${books.length}`;
 }
+
+ function addBook() {
+
+    const bookName =
+        document.getElementById("bookName").value;
+
+    books.push(bookName);
+
+    displayBooks();
+
+    updateBookCount();
+ }}
