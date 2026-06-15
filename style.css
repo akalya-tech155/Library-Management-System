@@ -11,6 +11,7 @@ body {
 }
 
 
+
 /*UPDATE STYLE.CSS*/
 
 #bookCount {
@@ -22,6 +23,16 @@ body {
 
 .borrow-btn {
     background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+
+/*UPDATED CSS FILE*/
+
+.return-btn {
+    background-color: blue;
     color: white;
     border: none;
     padding: 5px 10px;

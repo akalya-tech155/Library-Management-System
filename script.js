@@ -6,6 +6,7 @@ function addBook() {
 
 
 
+
 //ADDED NEW FEATURES IN JAVASCRIPT
 
 let books = [];
@@ -104,3 +105,26 @@ function displayBooks() {
 }
 
  
+// UPDATED JS FILE
+
+// UPDATED JS FILE
+
+function displayBooks() {
+
+    let output = "";
+
+    books.forEach(book => {
+
+        output += `
+        <div class="book">
+            ${book}
+            <button
+                class="borrow-btn"
+                onclick="borrowBook('${book}')">
+                Borrow
+            </button>
+        </div>`;
+    });
+
+    document.getElementById("bookList").innerHTML = output;
+}
