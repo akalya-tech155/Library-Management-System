@@ -14,3 +14,17 @@ function updateBookCount() {
         .innerText =
         `Total Books: ${books.length}`;
 }
+
+
+
+function addBook() {
+
+    const bookName =
+        document.getElementById("bookName").value;
+
+    books.push(bookName);
+
+    displayBooks();
+
+    updateBookCount();
+}
