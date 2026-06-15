@@ -9,3 +9,22 @@ body {
     padding: 10px;
     margin: 10px;
 }
+
+
+/*ADDED NEW FEATURES IN CSS*/
+
+#searchBook {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+#bookName {
+    width: 250px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
