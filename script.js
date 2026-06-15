@@ -105,26 +105,24 @@ function displayBooks() {
 }
 
  
-// UPDATED JS FILE
+
 
 // UPDATED JS FILE
 
-function displayBooks() {
+output += `
+<div class="book">
+    ${book}
 
-    let output = "";
+    <button
+        class="borrow-btn"
+        onclick="borrowBook('${book}')">
+        Borrow
+    </button>
 
-    books.forEach(book => {
+    <button
+        class="return-btn"
+        onclick="returnBook('${book}')">
+        Return
+    </button>
 
-        output += `
-        <div class="book">
-            ${book}
-            <button
-                class="borrow-btn"
-                onclick="borrowBook('${book}')">
-                Borrow
-            </button>
-        </div>`;
-    });
-
-    document.getElementById("bookList").innerHTML = output;
-}
+</div>`;
